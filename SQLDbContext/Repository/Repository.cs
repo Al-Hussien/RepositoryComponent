@@ -12,12 +12,13 @@ namespace SQLDbContext.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly SQLContext _dbContext;
+        //private readonly DbContext _dbContext;
         internal DbSet<T> _dbSet;
-        public Repository(SQLContext dbContext)
+        public Repository(/*DbContext dbContext,*/ DbSet<T> __dbset)
         {
-            _dbContext = dbContext;
-            _dbSet = _dbContext.Set<T>();
+            //_dbContext = dbContext;
+            //_dbSet = _dbContext.Set<T>();
+            _dbSet = __dbset;
         }
         public void Add(T entity)
         {

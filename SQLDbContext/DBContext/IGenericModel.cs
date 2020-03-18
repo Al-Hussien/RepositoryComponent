@@ -10,3 +10,4 @@ namespace SQLDbContext.DBContext
         public string Name { get; set; }
     }
 }
+/*This code is not used in branch : NewWay1*/

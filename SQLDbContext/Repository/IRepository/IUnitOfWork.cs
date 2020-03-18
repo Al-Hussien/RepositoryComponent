@@ -6,7 +6,6 @@ namespace SQLDbContext.Repository.IRepository
 {
     public interface IUnitOfWork : IDisposable
     {
-        IGenericModelRepository Parent { get; }
         void Save();
     }
 }

@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using SQLDbContext.DBContext;
 using SQLDbContext.Repository.IRepository;
 using System;
@@ -9,15 +10,12 @@ namespace SQLDbContext.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly SQLContext _dbContext;
+        private readonly DbContext _dbContext;
 
-        public UnitOfWork(SQLContext dbContext)
+        public UnitOfWork(DbContext dbContext)
         {
             _dbContext = dbContext;
-            Parent = new GenericModelRepository(_dbContext);
         }
-
-        public IGenericModelRepository Parent { get; private set; }
 
         public void Dispose()
         {

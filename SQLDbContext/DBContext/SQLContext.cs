@@ -12,7 +12,6 @@ namespace SQLDbContext.DBContext
             : base(options)
         {
         }
-
         public DbSet<IGenericModel> GenericModels { get; set; }
 
         public DbSet<IGenericModel> GetCollection<IGenericModelT>()
@@ -21,4 +20,5 @@ namespace SQLDbContext.DBContext
         }
     }
 }
+/*This code is not used in branch : NewWay1*/
 

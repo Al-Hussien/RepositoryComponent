@@ -11,3 +11,4 @@ namespace SQLDbContext.Repository.IRepository
         void Update(IGenericModel genericModel);
     }
 }
+/*This code is not used in branch : NewWay1*/

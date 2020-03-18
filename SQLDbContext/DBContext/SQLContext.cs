@@ -12,6 +12,7 @@ namespace SQLDbContext.DBContext
             : base(options)
         {
         }
+
         public DbSet<IGenericModel> GenericModels { get; set; }
 
         public DbSet<IGenericModel> GetCollection<IGenericModelT>()

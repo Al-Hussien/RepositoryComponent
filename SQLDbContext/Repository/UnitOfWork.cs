@@ -1,6 +1,5 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using SQLDbContext.DBContext;
 using SQLDbContext.Repository.IRepository;
 using System;
 using System.Collections.Generic;

@@ -8,10 +8,10 @@ using System.Text;
 
 namespace EFRepository.Repository
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class EFRepository<T> : IRepository<T> where T : class
     {
         internal DbSet<T> _dbSet;
-        public Repository(DbSet<T> __dbset)
+        public EFRepository(DbSet<T> __dbset)
         {
             _dbSet = __dbset;
         }

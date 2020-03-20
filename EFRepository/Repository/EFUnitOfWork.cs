@@ -6,11 +6,11 @@ using System.Text;
 
 namespace EFRepository.Repository
 {
-    public class UnitOfWork : IUnitOfWork
+    public class EFUnitOfWork : IUnitOfWork
     {
         private readonly DbContext _dbContext;
 
-        public UnitOfWork(DbContext dbContext)
+        public EFUnitOfWork(DbContext dbContext)
         {
             _dbContext = dbContext;
         }

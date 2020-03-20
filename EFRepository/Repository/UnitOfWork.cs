@@ -1,11 +1,10 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SQLDbContext.Repository
+namespace EFRepository.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {

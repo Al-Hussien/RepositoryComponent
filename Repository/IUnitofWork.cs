@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SQLDbContext.Repository.IRepository
+namespace Repository
 {
     public interface IUnitOfWork : IDisposable
     {

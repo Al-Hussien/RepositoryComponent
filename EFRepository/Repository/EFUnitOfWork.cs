@@ -8,7 +8,7 @@ namespace EFRepository.Repository
 {
     public class EFUnitOfWork : IUnitOfWork
     {
-        private readonly DbContext _dbContext;
+        private readonly DbContext _dbContext; 
 
         public EFUnitOfWork(DbContext dbContext)
         {

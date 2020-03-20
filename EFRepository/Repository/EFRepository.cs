@@ -14,7 +14,7 @@ namespace EFRepository.Repository
         public EFRepository(DbSet<T> __dbset)
         {
             _dbSet = __dbset;
-        }
+        } 
 
         public void Add(T entity)
         {
